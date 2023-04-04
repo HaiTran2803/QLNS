@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="448.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_java_k1n2_2021.MainController">
+    <children>
+      <Pane prefHeight="66.0" prefWidth="571.0" style="-fx-background-color: A39A43;">
+         <children>
+              <Label layoutX="204.0" layoutY="9.0" prefHeight="48.0" prefWidth="164.0" text="LIST ROOM" textAlignment="CENTER" textFill="#101010">
+                  <font>
+                      <Font name="System Bold" size="29.0" />
+                  </font>
+              </Label>
+         </children>
+      </Pane>
+        <Text layoutX="26.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã ID" />
+        <Text layoutX="30.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOB" />
+        <TextField fx:id="NOBText" layoutX="89.0" layoutY="141.0" promptText="NOB" />
+        <TextField fx:id="idRoomText" layoutX="89.0" layoutY="96.0" promptText="Nhập Mã ID" />
+      <TitledPane animated="false" layoutX="26.0" layoutY="178.0" text="Manage">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="219.0">
+               <children>
+                    <Button layoutX="113.0" layoutY="12.0" mnemonicParsing="false" onAction="#EditRoom" prefHeight="26.0" prefWidth="75.0" text="Edit" />
+                    <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#AddRoom" prefHeight="26.0" prefWidth="75.0" text="Add" />
+                    <Button layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#RemoveRoom" prefHeight="26.0" prefWidth="75.0" text="Delete" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+        <Button layoutX="30.0" layoutY="395.0" mnemonicParsing="false" onAction="#RoomonBack" prefHeight="26.0" prefWidth="75.0" text="Back" />
+        <TableView fx:id="TableRoomView" layoutX="269.0" layoutY="76.0" prefHeight="354.0" prefWidth="274.0">
+            <columns>
+                <TableColumn fx:id="roomColumn" prefWidth="138.39996337890625" text="ID Room" />
+                <TableColumn fx:id="numberOfBedColumn" prefWidth="135.20001220703125" text="Number of bed" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

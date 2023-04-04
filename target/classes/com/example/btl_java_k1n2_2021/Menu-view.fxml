@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="310.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_java_k1n2_2021.MenuController">
+   <children>
+      <Circle fill="#eaff00" layoutX="54.0" layoutY="46.0" opacity="0.18" radius="32.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#566471" layoutX="169.0" layoutY="99.0" opacity="0.18" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="391.0" layoutY="218.0" opacity="0.18" radius="55.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#50ff1f" layoutX="453.0" layoutY="-12.0" opacity="0.18" radius="74.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#398129" layoutX="70.0" layoutY="163.0" opacity="0.18" radius="55.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="258.0" layoutY="14.0" opacity="0.18" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#07020b" layoutX="536.0" layoutY="255.0" opacity="0.18" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#be1fff" layoutX="506.0" layoutY="140.0" opacity="0.18" radius="52.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#ff751f" layoutX="347.0" layoutY="123.0" opacity="0.18" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#f21fff" layoutX="282.0" layoutY="261.0" opacity="0.18" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="169.0" layoutY="237.0" opacity="0.18" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#ff1f50" layoutX="57.0" layoutY="273.0" opacity="0.18" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+      <Button layoutX="22.0" layoutY="140.0" mnemonicParsing="false" onAction="#onActRoom" prefHeight="74.0" prefWidth="157.0" text="ROOM MANAGE" textFill="#08cfea">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="420.0" layoutY="140.0" mnemonicParsing="false" onAction="#onActBooking" prefHeight="74.0" prefWidth="157.0" text="BOOKING MANAGE" textFill="#9a08cf">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="221.0" layoutY="140.0" mnemonicParsing="false" onAction="#onActCus" prefHeight="74.0" prefWidth="157.0" text="CUSTOMER MANAGE" textFill="#e40505">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="208.0" layoutY="14.0" prefHeight="88.0" prefWidth="183.0" text="MENU">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="255.0" mnemonicParsing="false" onAction="#onBacktologin" prefHeight="35.0" prefWidth="94.0" text="Back" />
+   </children>
+</AnchorPane>

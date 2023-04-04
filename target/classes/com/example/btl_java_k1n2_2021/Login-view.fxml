@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="289.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_java_k1n2_2021.Login">
+    <children>
+        <Pane layoutY="-1.0" prefHeight="80.0" prefWidth="640.0" style="-fx-background-color: B39A43;">
+            <children>
+                <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+      <Pane layoutX="214.0" layoutY="79.0" opacity="0.66" prefHeight="211.0" prefWidth="214.0" style="-fx-background-color: a34a43;" />
+        <Label layoutX="93.0" layoutY="128.0" text="UserName:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label layoutX="94.0" layoutY="175.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Button layoutX="245.0" layoutY="228.0" mnemonicParsing="false" onAction="#SceneLogin" text="Sign in" />
+        <Button layoutX="343.0" layoutY="228.0" mnemonicParsing="false" onAction="#SceneCancel" text="Cancel" />
+        <TextField fx:id="username" layoutX="245.0" layoutY="125.0" promptText="Username" />
+        <TextField fx:id="pass" layoutX="245.0" layoutY="172.0" promptText="Password" />
+    </children>
+</AnchorPane>
